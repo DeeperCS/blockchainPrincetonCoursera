@@ -1,10 +1,11 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class TxHandler {
 
     UTXOPool candidateUtxoPool;
-
 
     /**
      * Creates a public ledger whose current UTXOPool (collection of unspent transaction outputs) is
@@ -15,7 +16,6 @@ public class TxHandler {
         //first step is to make a "defensive" copy of utxoPool:
         candidateUtxoPool = new UTXOPool(utxoPool);
     }
-
 
     /**
      * @return true if:
@@ -30,10 +30,12 @@ public class TxHandler {
 
         double totalValueOfInputs = 0;
         double totalValueOfOutputs = 0;
+        Set<UTXO> spentUTXO = new HashSet<>();
 
         for (int index = 0; index < tx.numInputs(); index++) {
             Transaction.Input input = tx.getInput(index);
             UTXO utxo = new UTXO(input.prevTxHash, input.outputIndex);
+            spentUTXO.add(utxo);
             Transaction.Output previousOutput;
             //condition (1)
             if (candidateUtxoPool.contains(utxo)) {
@@ -51,6 +53,9 @@ public class TxHandler {
             if (output.value < 0) return false;
             totalValueOfOutputs = +output.value;
         }
+
+        //condition (3)
+        if (spentUTXO.size() < tx.numInputs()) return false;
 
         //condition (5)
         return (totalValueOfInputs >= totalValueOfOutputs);
@@ -72,7 +77,9 @@ public class TxHandler {
         List<Transaction> validTransactions = new ArrayList<>();
         Transaction[] validTransactionsAsArray = (Transaction[]) validTransactions.toArray();
 
-        candidateUtxoPool = makeCandidatePool(possibleTxs);
+//        candidateUtxoPool = addAllUTXOtoCandidatePool(possibleTxs);
+
+        addAllUTXOtoCandidatePool(possibleTxs);
 
         for (Transaction tx : possibleTxs){
             if (isValidTx(tx)) {
@@ -83,8 +90,8 @@ public class TxHandler {
         return validTransactionsAsArray;
     }
 
-
-    public UTXOPool makeCandidatePool(Transaction[] possibleTxs) {
+    //this method adds ALL UTXOs consumed in possibleTxs to candidateUtxoPool, whether the tx is valid or not
+    public UTXOPool addAllUTXOtoCandidatePool(Transaction[] possibleTxs) {
         for (Transaction tx : possibleTxs) {
             int numberOfOutputs = tx.numOutputs();
             for (int i = 0; i < numberOfOutputs; i++) {
@@ -96,7 +103,11 @@ public class TxHandler {
         return candidateUtxoPool;
     }
 
-    public UTXOPool updateCandidatePool(Transaction tx){
 
+    public UTXOPool updateCandidatePool(Transaction tx){
+        //since tx is valid, as you find an utxo you can go ahead and remove it from the candidatePool
+        tx.getInputs().forEach(input -> {UTXO utxo = new UTXO(input.prevTxHash, input.outputIndex);
+            candidateUtxoPool.removeUTXO(utxo);});
+        return candidateUtxoPool;
     }
 }
