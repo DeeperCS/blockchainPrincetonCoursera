@@ -27,7 +27,35 @@ public class TxHandler {
      */
     public boolean isValidTx(Transaction tx) {
 
-        double totalValueOfInputs;
+        double totalValueOfInputs = 0;
+        double totalValueOfOutputs = 0;
+
+        for (int index = 0; index < tx.numInputs(); index++){
+            Transaction.Input input = tx.getInput(index);
+            UTXO utxo = new UTXO(input.prevTxHash, input.outputIndex);
+            Transaction.Output previousOutput;
+            //condition (1)
+            if (candidateUtxoPool.contains(utxo)) {
+                previousOutput = candidateUtxoPool.getTxOutput(utxo);
+                //condition (2)
+                if (Crypto.verifySignature(previousOutput.address, tx.getRawDataToSign(index), input.signature)){
+                    totalValueOfInputs =+ previousOutput.value;}
+                else return false;
+            }
+            else return false;
+        }
+
+        for (int index = 0; index < tx.numOutputs(); index ++){
+            Transaction.Output output = tx.getOutput(index);
+            totalValueOfOutputs =+ output.value;
+        }
+
+        //condition (5)
+        return (totalValueOfInputs >= totalValueOfOutputs);
+
+
+
+    /*    Damn it! Can't use forEach as you need indexes for everything!
 
         //Loop through all inputs
         tx.getInputs().forEach(
@@ -37,7 +65,7 @@ public class TxHandler {
                             if (candidateUtxoPool.contains(utxo)) {
                                 output = candidateUtxoPool.getTxOutput(utxo);
                                 //condition (2)
-                                Crypto.verifySignature(output.address,  , input.signature);
+                                Crypto.verifySignature(output.address, tx.getRawDataToSign() , input.signature);
 
                                 sumValueOfInput(tx);
 
@@ -45,7 +73,7 @@ public class TxHandler {
                             else return false;
                 }
         );
-
+*/
     }
 
 

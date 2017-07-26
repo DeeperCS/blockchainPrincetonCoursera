@@ -16,12 +16,15 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Transaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-              <folding />
+            <state relative-caret-position="1251">
+              <caret line="77" column="31" lean-forward="false" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="31" />
+              <folding>
+                <element signature="e#3734#3735#0" expanded="true" />
+                <element signature="e#3791#3792#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -29,18 +32,18 @@
       <file leaf-file-name="UTXO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UTXO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="25" />
+            <state relative-caret-position="546">
+              <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TxHandler.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TxHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TxHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="39" column="71" lean-forward="false" selection-start-line="39" selection-start-column="71" selection-end-line="39" selection-end-column="71" />
+            <state relative-caret-position="436">
+              <caret line="47" column="43" lean-forward="false" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,8 +54,8 @@
       <file leaf-file-name="Crypto.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Crypto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="14" column="74" lean-forward="false" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="74" />
+            <state relative-caret-position="210">
+              <caret line="14" column="71" lean-forward="false" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -84,9 +87,12 @@
       <find>getO</find>
       <find>verify</find>
       <find>con</find>
-      <find>equals</find>
       <find>Transaction(</find>
+      <find>mess</find>
       <find>sign</find>
+      <find>equals</find>
+      <find>addIn</find>
+      <find>num</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -588,12 +594,12 @@
       <option name="presentableId" value="Default" />
       <updated>1500987093055</updated>
       <workItem from="1500987096362" duration="7649000" />
-      <workItem from="1501056666139" duration="4722000" />
+      <workItem from="1501056666139" duration="5975000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12371000" />
+    <option name="totallyTimeSpent" value="13624000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1858" height="1096" extended-state="6" />
@@ -644,7 +650,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3507">
           <caret line="167" column="9" lean-forward="true" selection-start-line="167" selection-start-column="9" selection-end-line="167" selection-end-column="9" />
-          <folding />
+          <folding>
+            <element signature="e#3734#3735#0" expanded="true" />
+            <element signature="e#3791#3792#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -682,8 +691,8 @@
         <state relative-caret-position="199">
           <caret line="593" column="19" lean-forward="false" selection-start-line="593" selection-start-column="19" selection-end-line="593" selection-end-column="19" />
           <folding>
-            <element signature="e#23597#23598#0" expanded="true" />
-            <element signature="e#23651#23652#0" expanded="true" />
+            <element signature="e#23597#23598#0" expanded="false" />
+            <element signature="e#23651#23652#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -699,37 +708,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UTXO.java">
+    <entry file="file://$PROJECT_DIR$/src/Crypto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="25" />
+        <state relative-caret-position="210">
+          <caret line="14" column="71" lean-forward="false" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TxHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/UTXO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="39" column="71" lean-forward="false" selection-start-line="39" selection-start-column="71" selection-end-line="39" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Crypto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="14" column="74" lean-forward="false" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="74" />
+        <state relative-caret-position="546">
+          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Transaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="1251">
+          <caret line="77" column="31" lean-forward="false" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="31" />
+          <folding>
+            <element signature="e#3734#3735#0" expanded="true" />
+            <element signature="e#3791#3792#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TxHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="47" column="43" lean-forward="false" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
