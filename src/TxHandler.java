@@ -27,8 +27,37 @@ public class TxHandler {
      */
     public boolean isValidTx(Transaction tx) {
 
+        double totalValueOfInputs;
 
-        // IMPLEMENT THIS
+        //Loop through all inputs
+        tx.getInputs().forEach(
+                input -> {  UTXO utxo = new UTXO(input.prevTxHash, input.outputIndex);
+                            Transaction.Output output;
+                            //condition (1)
+                            if (candidateUtxoPool.contains(utxo)) {
+                                output = candidateUtxoPool.getTxOutput(utxo);
+                                //condition (2)
+                                Crypto.verifySignature(output.address,  , input.signature);
+
+                                sumValueOfInput(tx);
+
+                            }
+                            else return false;
+                }
+        );
+
+    }
+
+
+    public boolean checkValidityConditions(Transaction.Input input){
+
+        //Condition (1)
+        UTXO utxo = new UTXO(input.prevTxHash, input.outputIndex);
+        if (candidateUtxoPool.contains(utxo) ) return true;
+
+        //Condition (2)
+        Crypto.verifySignature()
+        else return false;
     }
 
     /**
@@ -43,19 +72,18 @@ public class TxHandler {
             if valid update candidate pool
         */
 
-        List<Transaction> validTransactionsAsList = new ArrayList<>();
-        Transaction[] validTransactions = (Transaction[]) validTransactionsAsList.toArray();
-
+        List<Transaction> validTransactions = new ArrayList<>();
+        Transaction[] validTransactionsAsArray = (Transaction[]) validTransactions.toArray();
 
         candidateUtxoPool = makeCandidatePool(possibleTxs);
 
         for (Transaction tx : possibleTxs){
             if (isValidTx(tx)) {
-                validTransactionsAsList.add(tx);
+                validTransactions.add(tx);
                 updateCandidatePool(tx);
             }
         }
-        return validTransactions;
+        return validTransactionsAsArray;
     }
 
 
