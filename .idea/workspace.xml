@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f3688c2-f3b9-433b-82f7-4231c4de43bf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ScroogeCoin/Crypto.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ScroogeCoin/Transaction$Input.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ScroogeCoin/Transaction$Output.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ScroogeCoin/Transaction.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ScroogeCoin/TxHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ScroogeCoin/UTXO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ScroogeCoin/UTXOPool.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/ScroogeCoin/TxHandlerTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/TxHandlerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScroogeCoin.iml" afterPath="$PROJECT_DIR$/ScroogeCoin.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TxHandler.java" afterPath="$PROJECT_DIR$/src/TxHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/TxHandlerTest.java" afterPath="$PROJECT_DIR$/test/TxHandlerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +20,7 @@
       <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Transaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1251">
+            <state relative-caret-position="588">
               <caret line="77" column="31" lean-forward="false" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="31" />
               <folding>
                 <element signature="e#3734#3735#0" expanded="true" />
@@ -43,8 +33,8 @@
       <file leaf-file-name="TxHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TxHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="8" />
+            <state relative-caret-position="-1008">
+              <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,8 +55,8 @@
       <file leaf-file-name="UTXOPool.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UTXOPool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
-              <caret line="53" column="1" lean-forward="false" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+            <state relative-caret-position="189">
+              <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="27" />
               <folding>
                 <element signature="e#495#496#0" expanded="true" />
                 <element signature="e#561#562#0" expanded="true" />
@@ -78,8 +68,8 @@
       <file leaf-file-name="TxHandlerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/TxHandlerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="419">
+              <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,8 +111,8 @@
       <find>sign</find>
       <find>addIn</find>
       <find>num</find>
-      <find>con</find>
       <find>equals</find>
+      <find>con</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -245,7 +235,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TxHandlerTest">
+  <component name="RunManager" selected="JUnit.TxHandlerTest.testMethod">
     <configuration default="false" name="TxHandlerTest.setTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="ScroogeCoin" />
@@ -276,6 +266,27 @@
       <option name="MAIN_CLASS_NAME" value="TxHandlerTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TxHandlerTest.testMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="ScroogeCoin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TxHandlerTest" />
+      <option name="METHOD_NAME" value="testMethod" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -675,14 +686,16 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.TxHandlerTest.setTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.TxHandlerTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TxHandlerTest.testMethod" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TxHandlerTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TxHandlerTest.setTest" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TxHandlerTest.testMethod" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TxHandlerTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TxHandlerTest.setTest" />
       </list>
     </recent_temporary>
   </component>
@@ -700,20 +713,47 @@
       <option name="presentableId" value="Default" />
       <updated>1500987093055</updated>
       <workItem from="1500987096362" duration="7649000" />
-      <workItem from="1501056666139" duration="9640000" />
+      <workItem from="1501056666139" duration="13963000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TxHandlerTest_setTest - 2017.07.26 at 13h 15m 36s.xml">
-      <configuration name="TxHandlerTest.setTest" configurationId="JUnit" />
+    <history-entry file="TxHandlerTest_testMethod - 2017.07.26 at 15h 09m 05s.xml">
+      <configuration name="TxHandlerTest.testMethod" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TxHandlerTest_testMethod - 2017.07.26 at 15h 10m 25s.xml">
+      <configuration name="TxHandlerTest.testMethod" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TxHandlerTest_testMethod - 2017.07.26 at 15h 10m 33s.xml">
+      <configuration name="TxHandlerTest.testMethod" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TxHandlerTest_testMethod - 2017.07.26 at 15h 10m 50s.xml">
+      <configuration name="TxHandlerTest.testMethod" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TxHandlerTest_testMethod - 2017.07.26 at 15h 15m 34s.xml">
+      <configuration name="TxHandlerTest.testMethod" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TxHandlerTest_testMethod - 2017.07.26 at 15h 15m 53s.xml">
+      <configuration name="TxHandlerTest.testMethod" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TxHandlerTest_testMethod - 2017.07.26 at 15h 24m 28s.xml">
+      <configuration name="TxHandlerTest.testMethod" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TxHandlerTest_testMethod - 2017.07.26 at 15h 25m 21s.xml">
+      <configuration name="TxHandlerTest.testMethod" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TxHandlerTest_testMethod - 2017.07.26 at 15h 26m 44s.xml">
+      <configuration name="TxHandlerTest.testMethod" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TxHandlerTest_testMethod - 2017.07.26 at 15h 27m 41s.xml">
+      <configuration name="TxHandlerTest.testMethod" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17289000" />
+    <option name="totallyTimeSpent" value="21612000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1858" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1858" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -726,9 +766,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20127796" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20127796" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22253363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -738,7 +778,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.399361" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -754,7 +794,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="7" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -821,10 +863,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/UTXO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/UTXOPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="53" column="1" lean-forward="false" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+        <state relative-caret-position="189">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="27" />
           <folding>
             <element signature="e#495#496#0" expanded="true" />
             <element signature="e#561#562#0" expanded="true" />
@@ -834,7 +884,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Transaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1251">
+        <state relative-caret-position="588">
           <caret line="77" column="31" lean-forward="false" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="31" />
           <folding>
             <element signature="e#3734#3735#0" expanded="true" />
@@ -845,26 +895,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TxHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="8" />
+        <state relative-caret-position="-1008">
+          <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UTXO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/TxHandlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="419">
+          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
