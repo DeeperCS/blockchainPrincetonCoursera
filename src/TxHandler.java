@@ -16,6 +16,7 @@ public class TxHandler {
         candidateUtxoPool = new UTXOPool(utxoPool);
     }
 
+
     /**
      * @return true if:
      * (1) all outputs claimed by {@code tx} are in the current UTXO pool,
@@ -30,7 +31,7 @@ public class TxHandler {
         double totalValueOfInputs = 0;
         double totalValueOfOutputs = 0;
 
-        for (int index = 0; index < tx.numInputs(); index++){
+        for (int index = 0; index < tx.numInputs(); index++) {
             Transaction.Input input = tx.getInput(index);
             UTXO utxo = new UTXO(input.prevTxHash, input.outputIndex);
             Transaction.Output previousOutput;
@@ -38,55 +39,23 @@ public class TxHandler {
             if (candidateUtxoPool.contains(utxo)) {
                 previousOutput = candidateUtxoPool.getTxOutput(utxo);
                 //condition (2)
-                if (Crypto.verifySignature(previousOutput.address, tx.getRawDataToSign(index), input.signature)){
-                    totalValueOfInputs =+ previousOutput.value;}
-                else return false;
-            }
-            else return false;
+                if (Crypto.verifySignature(previousOutput.address, tx.getRawDataToSign(index), input.signature)) {
+                    totalValueOfInputs = +previousOutput.value;
+                } else return false;
+            } else return false;
         }
 
-        for (int index = 0; index < tx.numOutputs(); index ++){
+        for (int index = 0; index < tx.numOutputs(); index++) {
             Transaction.Output output = tx.getOutput(index);
-            totalValueOfOutputs =+ output.value;
+            //condition (4)
+            if (output.value < 0) return false;
+            totalValueOfOutputs = +output.value;
         }
 
         //condition (5)
         return (totalValueOfInputs >= totalValueOfOutputs);
-
-
-
-    /*    Damn it! Can't use forEach as you need indexes for everything!
-
-        //Loop through all inputs
-        tx.getInputs().forEach(
-                input -> {  UTXO utxo = new UTXO(input.prevTxHash, input.outputIndex);
-                            Transaction.Output output;
-                            //condition (1)
-                            if (candidateUtxoPool.contains(utxo)) {
-                                output = candidateUtxoPool.getTxOutput(utxo);
-                                //condition (2)
-                                Crypto.verifySignature(output.address, tx.getRawDataToSign() , input.signature);
-
-                                sumValueOfInput(tx);
-
-                            }
-                            else return false;
-                }
-        );
-*/
     }
 
-
-    public boolean checkValidityConditions(Transaction.Input input){
-
-        //Condition (1)
-        UTXO utxo = new UTXO(input.prevTxHash, input.outputIndex);
-        if (candidateUtxoPool.contains(utxo) ) return true;
-
-        //Condition (2)
-        Crypto.verifySignature()
-        else return false;
-    }
 
     /**
      * Handles each epoch by receiving an unordered array of proposed transactions, checking each
