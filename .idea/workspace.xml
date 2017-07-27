@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f3688c2-f3b9-433b-82f7-4231c4de43bf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ScroogeCoin/TxHandler.class" afterPath="$PROJECT_DIR$/out/production/ScroogeCoin/TxHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/ScroogeCoin/TxHandlerTest.class" afterPath="$PROJECT_DIR$/out/test/ScroogeCoin/TxHandlerTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScroogeCoin.iml" afterPath="$PROJECT_DIR$/ScroogeCoin.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TxHandler.java" afterPath="$PROJECT_DIR$/src/TxHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/SideTests.java" afterPath="$PROJECT_DIR$/test/SideTests.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/TxHandlerTest.java" afterPath="$PROJECT_DIR$/test/TxHandlerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,20 +16,20 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.22244357">
+    <splitter split-orientation="horizontal" split-proportion="0.45235425">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Transaction.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+                <state relative-caret-position="-340">
+                  <caret line="111" column="9" lean-forward="true" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TxHandler.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="TxHandler.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/TxHandler.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="353">
@@ -57,8 +54,8 @@
           <file leaf-file-name="UTXO.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/UTXO.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2064">
-                  <caret line="90" column="1" lean-forward="false" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
+                <state relative-caret-position="216">
+                  <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -68,11 +65,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="TxHandlerTest.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="TxHandlerTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/TxHandlerTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="197">
-                  <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+                <state relative-caret-position="504">
+                  <caret line="77" column="27" lean-forward="true" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -80,34 +77,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SideTests.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="SideTests.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/SideTests.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="487">
-                  <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+                <state relative-caret-position="105">
+                  <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Base64.java" pinned="false" current-in-tab="false">
-            <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/com/sun/org/apache/xml/internal/security/utils/Base64.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="146">
-                  <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ScroogeCoin.iml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ScroogeCoin.iml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
-                  <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -117,16 +94,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="235">
                   <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Signature.java" pinned="false" current-in-tab="false">
-            <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/security/Signature.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="228">
-                  <caret line="454" column="21" lean-forward="false" selection-start-line="454" selection-start-column="17" selection-end-line="454" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -160,8 +127,8 @@
       <find>num</find>
       <find>equals</find>
       <find>con</find>
-      <find>signat</find>
       <find>DEFA</find>
+      <find>signat</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -178,8 +145,8 @@
         <option value="$PROJECT_DIR$/src/Transaction.java" />
         <option value="$PROJECT_DIR$/ScroogeCoin.iml" />
         <option value="$PROJECT_DIR$/src/TxHandler.java" />
-        <option value="$PROJECT_DIR$/test/TxHandlerTest.java" />
         <option value="$PROJECT_DIR$/test/SideTests.java" />
+        <option value="$PROJECT_DIR$/test/TxHandlerTest.java" />
       </list>
     </option>
   </component>
@@ -315,7 +282,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SideTests.testPublicKeyGen">
+  <component name="RunManager" selected="JUnit.TxHandlerTest.isValidTxWithValidTransactions">
     <configuration default="false" name="TxHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="ScroogeCoin" />
@@ -817,9 +784,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SideTests.testPublicKeyGen" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TxHandlerTest.testPublicKeyGen" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TxHandlerTest.isValidTxWithValidTransactions" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TxHandlerTest.isValidTxWithValidTransactions" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SideTests.testPublicKeyGen" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TxHandlerTest.testPublicKeyGen" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.TxHandlerTest.testMethod" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.TxHandlerTest" />
       </list>
@@ -840,44 +807,44 @@
       <updated>1500987093055</updated>
       <workItem from="1500987096362" duration="7649000" />
       <workItem from="1501056666139" duration="14605000" />
-      <workItem from="1501142892411" duration="9029000" />
+      <workItem from="1501142892411" duration="10638000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SideTests_testPublicKeyGen - 2017.07.27 at 12h 49m 04s.xml">
-      <configuration name="SideTests.testPublicKeyGen" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SideTests_testPublicKeyGen - 2017.07.27 at 12h 51m 50s.xml">
-      <configuration name="SideTests.testPublicKeyGen" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TxHandlerTest_isValidTxWithValidTransactions - 2017.07.27 at 12h 19m 04s.xml">
+    <history-entry file="TxHandlerTest_isValidTxWithValidTransactions - 2017.07.27 at 14h 29m 05s.xml">
       <configuration name="TxHandlerTest.isValidTxWithValidTransactions" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TxHandlerTest_isValidTxWithValidTransactions - 2017.07.27 at 12h 23m 55s.xml">
+    <history-entry file="TxHandlerTest_isValidTxWithValidTransactions - 2017.07.27 at 14h 30m 32s.xml">
       <configuration name="TxHandlerTest.isValidTxWithValidTransactions" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TxHandlerTest_isValidTxWithValidTransactions - 2017.07.27 at 12h 24m 52s.xml">
+    <history-entry file="TxHandlerTest_isValidTxWithValidTransactions - 2017.07.27 at 14h 31m 10s.xml">
       <configuration name="TxHandlerTest.isValidTxWithValidTransactions" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TxHandlerTest_isValidTxWithValidTransactions - 2017.07.27 at 12h 25m 13s.xml">
+    <history-entry file="TxHandlerTest_isValidTxWithValidTransactions - 2017.07.27 at 14h 31m 56s.xml">
       <configuration name="TxHandlerTest.isValidTxWithValidTransactions" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TxHandlerTest_isValidTxWithValidTransactions - 2017.07.27 at 12h 30m 43s.xml">
+    <history-entry file="TxHandlerTest_isValidTxWithValidTransactions - 2017.07.27 at 14h 32m 16s.xml">
       <configuration name="TxHandlerTest.isValidTxWithValidTransactions" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TxHandlerTest_isValidTxWithValidTransactions - 2017.07.27 at 12h 32m 05s.xml">
+    <history-entry file="TxHandlerTest_isValidTxWithValidTransactions - 2017.07.27 at 14h 33m 28s.xml">
       <configuration name="TxHandlerTest.isValidTxWithValidTransactions" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TxHandlerTest_isValidTxWithValidTransactions - 2017.07.27 at 12h 32m 44s.xml">
+    <history-entry file="TxHandlerTest_isValidTxWithValidTransactions - 2017.07.27 at 14h 35m 38s.xml">
       <configuration name="TxHandlerTest.isValidTxWithValidTransactions" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TxHandlerTest_testPublicKeyGen - 2017.07.27 at 12h 47m 58s.xml">
-      <configuration name="TxHandlerTest.testPublicKeyGen" configurationId="JUnit" />
+    <history-entry file="TxHandlerTest_isValidTxWithValidTransactions - 2017.07.27 at 14h 36m 10s.xml">
+      <configuration name="TxHandlerTest.isValidTxWithValidTransactions" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TxHandlerTest_isValidTxWithValidTransactions - 2017.07.27 at 14h 37m 21s.xml">
+      <configuration name="TxHandlerTest.isValidTxWithValidTransactions" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TxHandlerTest_isValidTxWithValidTransactions - 2017.07.27 at 14h 37m 46s.xml">
+      <configuration name="TxHandlerTest.isValidTxWithValidTransactions" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31283000" />
+    <option name="totallyTimeSpent" value="32892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1858" height="1096" extended-state="6" />
@@ -893,19 +860,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48988286" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28647497" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36102235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1558296" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1558296" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2342918" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3972311" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -960,42 +927,6 @@
           <line>45</line>
           <properties />
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/TxHandlerTest.java</url>
-          <line>33</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/TxHandlerTest.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/TxHandlerTest.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/TxHandlerTest.java</url>
-          <line>39</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/TxHandlerTest.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/TxHandlerTest.java</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="18" />
@@ -1120,36 +1051,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TxHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UTXO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2064">
-          <caret line="90" column="1" lean-forward="false" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UTXOPool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Transaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -1159,16 +1064,6 @@
         <state relative-caret-position="146">
           <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/TxHandlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1188,10 +1083,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/UTXO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="111" column="9" lean-forward="true" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/SideTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TxHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/TxHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="77" column="27" lean-forward="true" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

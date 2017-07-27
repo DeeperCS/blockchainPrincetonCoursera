@@ -17,7 +17,7 @@ public class SideTests {
         SecureRandom random = SecureRandom.getInstance("SHA1PRNG", "SUN");
         keyGen.initialize(1024, random);
         KeyPair pair = keyGen.generateKeyPair();
-        PrivateKey priv = pair.getPrivate();
+        //PrivateKey priv = pair.getPrivate();
         PublicKey pub = pair.getPublic();
         return pub;
     }

@@ -1,13 +1,12 @@
-import org.jetbrains.annotations.Nullable;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.*;
+import org.junit.Assert.*;
 
 
-import java.security.KeyFactory;
-import java.security.PublicKey;
-import java.security.spec.X509EncodedKeySpec;
-import java.util.Base64;
+import java.security.*;
+
 
 
 public class TxHandlerTest {
@@ -22,24 +21,12 @@ public class TxHandlerTest {
 
 
 
-
-    @Before
-    public void setup(){
-
+   /* @Before
+    public void setup() throws NoSuchProviderException, NoSuchAlgorithmException {
 
 
 
 
-
-        Cata = Mockito.mock(PublicKey.class);
-        Mockito.when(Cata.equals(null)).thenReturn(false);
-        Fra = Mockito.mock(PublicKey.class);
-
-
-        txToStartTests = new Transaction();
-        txToStartTests.addOutput(8675309, Fra);
-
-        utxoToStartTests = new UTXO(txToStartTests.getHash(), 0);
 
 
         //The following three are valid transactions
@@ -51,39 +38,44 @@ public class TxHandlerTest {
         //Mockito.when(Crypto.verifySignature(Cata, tx14.getRawDataToSign(0), null)).thenReturn(true);
 
 
-/*        tx17 = new Transaction();
+*//*        tx17 = new Transaction();
         tx17.addOutput(1, Cata);
         tx17.addOutput(1, Cata);
-        tx17.addInput(tx14.getHash(), 0);*/
+        tx17.addInput(tx14.getHash(), 0);*//*
 
-       /* don't deal with this yet
+       *//* don't deal with this yet
         //Second block
         Transaction tx42 = new Transaction();
         tx42.addOutput(0.7, Fra);
         tx42.addOutput(0.3, Cata);
         tx42.addInput(tx17.getHash(), 1);
 
-        //todo: make invalid transaction*/
+        //todo: make invalid transaction*//*
 
-/*
+*//*
        //When processing the first block, first step should be gathering all these utxo's
         utxo14_0 = new UTXO(tx14.getHash(), 0);
         utxo17_0 = new UTXO(tx17.getHash(), 0);
-        utxo17_1 = new UTXO(tx17.getHash(), 1);*/
+        utxo17_1 = new UTXO(tx17.getHash(), 1);*//*
 
-    }
+    }*/
 
     @Test
-    public void isValidTxWithValidTransactions(){
+    public void isValidTxWithValidTransactions() throws NoSuchProviderException, NoSuchAlgorithmException {
+        SideTests st = new SideTests();
+        Cata = st.generatePublicKey();
+        Fra = st.generatePublicKey();
+        Assert.assertNotEquals(Cata, Fra);
 
-       UTXOPool genesisUTXOPool = new UTXOPool();
-       genesisUTXOPool.addUTXO(utxoToStartTests, txToStartTests.getOutput(0));
-       TxHandler txHandler = new TxHandler(genesisUTXOPool);
+        //is the following really necessary? boh
+        txToStartTests = new Transaction();
+        txToStartTests.addOutput(8675309, Fra);
+        //System.out.println(txToStartTests.numOutputs());
 
+        UTXOPool genesisUTXOPool = new UTXOPool();
+        TxHandler txHandler = new TxHandler(genesisUTXOPool);
 
-
-        System.out.println(txHandler.isValidTx(tx14));
-
+        System.out.println(txHandler.isValidTx(txToStartTests));
     }
 
 
@@ -116,6 +108,7 @@ public class TxHandlerTest {
 
 
     }*/
+
 
 
 }
