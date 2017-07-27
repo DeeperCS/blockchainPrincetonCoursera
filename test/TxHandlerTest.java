@@ -43,7 +43,7 @@ public class TxHandlerTest {
        *//* don't deal with this yet
         //Second block
         Transaction tx42 = new Transaction();
-        tx42.addOutput(0.7, Fra);
+        tx42.addOutput(0.7, FraPk);
         tx42.addOutput(0.3, Cata);
         tx42.addInput(tx17.getHash(), 1);
 

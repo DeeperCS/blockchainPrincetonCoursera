@@ -29,5 +29,9 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="org.powermock:powermock-core:1.7.0" level="project" />
+    <orderEntry type="library" name="org.powermock:powermock-module-junit4:1.7.0" level="project" />
+    <orderEntry type="library" name="org.powermock:powermock-api-mockito:1.7.0" level="project" />
+    <orderEntry type="library" name="org.javassist:javassist:3.21.0-GA" level="project" />
   </component>
 </module>
