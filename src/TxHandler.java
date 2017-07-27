@@ -28,8 +28,6 @@ public class TxHandler {
      */
     public boolean isValidTx(Transaction tx) {
 
-        //todo: figure out this value!
-        if (tx == null) return false;
 
         double totalValueOfInputs = 0;
         double totalValueOfOutputs = 0;

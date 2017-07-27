@@ -11,6 +11,8 @@ import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 import java.security.PublicKey;
 
+import static org.powermock.api.mockito.PowerMockito.when;
+
 @RunWith(PowerMockRunner.class)
 @PrepareForTest({Crypto.class})
 
@@ -37,7 +39,8 @@ public class TxHandlerOptimized {
 
         tx17.addInput(tx14.getHash(), 0);
         //BEWARE! must sign each input
-        tx17.addSignature(new byte[4], 0);
+        byte[] tx17signature = new byte[4];
+        tx17.addSignature(tx17signature, 0);
         tx17.setHash(new byte[8]);
 
         utxo14_0 = new UTXO(tx14.getHash(), 0);
@@ -65,23 +68,13 @@ public class TxHandlerOptimized {
         TxHandler txHandler = new TxHandler(utxoPoolAfterTx14);
         //so far this has no problems
 
-        System.out.println(tx17.getRawDataToSign(0));
+        byte[] message = tx17.getRawDataToSign(0);
 
         PowerMockito.mockStatic(Crypto.class);
-
-
-
-
-        /*
-        Crypto crypto = Mockito.mock(Crypto.class);
-        Mockito.when(crypto.v)
-
+        when(Crypto.verifySignature(CataPk, message, tx17.getInput(0).signature )).thenReturn(true);
 
         txHandler.isValidTx(tx17);
-*/
-
-
-
-
     }
+
+
 }
