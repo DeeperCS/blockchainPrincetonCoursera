@@ -1,8 +1,5 @@
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
-import org.mockito.*;
-import org.junit.Assert.*;
 
 
 import java.security.*;
@@ -14,7 +11,7 @@ public class TxHandlerTest {
     PublicKey Cata;
     PublicKey Fra;
 
-    Transaction txToStartTests, tx14, tx17, tx42, tx43;
+    Transaction tx14, tx17, tx42, tx43;
     UTXO utxoToStartTests, utxo14_0, utxo17_0, utxo17_1;
 
 
@@ -60,22 +57,27 @@ public class TxHandlerTest {
 
     }*/
 
+
+
+
+
+
     @Test
-    public void isValidTxWithValidTransactions() throws NoSuchProviderException, NoSuchAlgorithmException {
+    public void isValidTxWithNoInputs() throws NoSuchProviderException, NoSuchAlgorithmException {
         SideTests st = new SideTests();
         Cata = st.generatePublicKey();
         Fra = st.generatePublicKey();
         Assert.assertNotEquals(Cata, Fra);
 
         //is the following really necessary? boh
-        txToStartTests = new Transaction();
-        txToStartTests.addOutput(8675309, Fra);
-        //System.out.println(txToStartTests.numOutputs());
+        tx14 = new Transaction();
+        tx14.addOutput(2, Cata);
+        //System.out.println(tx14.numOutputs());
 
         UTXOPool genesisUTXOPool = new UTXOPool();
         TxHandler txHandler = new TxHandler(genesisUTXOPool);
 
-        System.out.println(txHandler.isValidTx(txToStartTests));
+        System.out.println(txHandler.isValidTx(tx14));
     }
 
 
