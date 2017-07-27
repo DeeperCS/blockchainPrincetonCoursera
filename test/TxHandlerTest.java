@@ -1,11 +1,13 @@
+import org.jetbrains.annotations.Nullable;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
-import org.junit.Assert;
 import org.mockito.*;
 
 
+import java.security.KeyFactory;
 import java.security.PublicKey;
+import java.security.spec.X509EncodedKeySpec;
+import java.util.Base64;
 
 
 public class TxHandlerTest {
@@ -13,16 +15,32 @@ public class TxHandlerTest {
     PublicKey Cata;
     PublicKey Fra;
 
-    Transaction tx14, tx17, tx42, tx43;
+    Transaction txToStartTests, tx14, tx17, tx42, tx43;
+    UTXO utxoToStartTests, utxo14_0, utxo17_0, utxo17_1;
 
-    UTXO utxo14_0, utxo17_0, utxo17_1;
+
+
 
 
 
     @Before
     public void setup(){
+
+
+
+
+
+
         Cata = Mockito.mock(PublicKey.class);
+        Mockito.when(Cata.equals(null)).thenReturn(false);
         Fra = Mockito.mock(PublicKey.class);
+
+
+        txToStartTests = new Transaction();
+        txToStartTests.addOutput(8675309, Fra);
+
+        utxoToStartTests = new UTXO(txToStartTests.getHash(), 0);
+
 
         //The following three are valid transactions
 
@@ -30,10 +48,13 @@ public class TxHandlerTest {
         tx14 = new Transaction();
         tx14.addOutput(2, Cata);
 
-        tx17 = new Transaction();
+        //Mockito.when(Crypto.verifySignature(Cata, tx14.getRawDataToSign(0), null)).thenReturn(true);
+
+
+/*        tx17 = new Transaction();
         tx17.addOutput(1, Cata);
         tx17.addOutput(1, Cata);
-        tx17.addInput(tx14.getHash(), 0);
+        tx17.addInput(tx14.getHash(), 0);*/
 
        /* don't deal with this yet
         //Second block
@@ -44,21 +65,22 @@ public class TxHandlerTest {
 
         //todo: make invalid transaction*/
 
-
+/*
        //When processing the first block, first step should be gathering all these utxo's
         utxo14_0 = new UTXO(tx14.getHash(), 0);
         utxo17_0 = new UTXO(tx17.getHash(), 0);
-        utxo17_1 = new UTXO(tx17.getHash(), 1);
+        utxo17_1 = new UTXO(tx17.getHash(), 1);*/
 
     }
 
     @Test
     public void isValidTxWithValidTransactions(){
 
-       //At genesis I haven't processed any transactions so UTXOPool is empty
        UTXOPool genesisUTXOPool = new UTXOPool();
-
+       genesisUTXOPool.addUTXO(utxoToStartTests, txToStartTests.getOutput(0));
        TxHandler txHandler = new TxHandler(genesisUTXOPool);
+
+
 
         System.out.println(txHandler.isValidTx(tx14));
 

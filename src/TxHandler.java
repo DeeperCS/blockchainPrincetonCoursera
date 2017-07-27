@@ -19,7 +19,7 @@ public class TxHandler {
 
     /**
      * @return true if:
-     * (1) all outputs claimed by {@code tx} are in the current UTXO pool,
+     * (1) all outputs (my note: do they mean inputs?) claimed by {@code tx} are in the current UTXO pool,
      * (2) the signatures on each input of {@code tx} are valid,
      * (3) no UTXO is claimed multiple times by {@code tx},
      * (4) all of {@code tx}s output values are non-negative, and
@@ -28,11 +28,19 @@ public class TxHandler {
      */
     public boolean isValidTx(Transaction tx) {
 
+        //todo: figure out this value!
         if (tx == null) return false;
 
         double totalValueOfInputs = 0;
         double totalValueOfOutputs = 0;
         Set<UTXO> spentUTXO = new HashSet<>();
+
+        //todo: first figure out what to do with createCoin transactions (have no input)
+        /*
+        * Conditions (1), (2), (3) and (5) don't apply
+        */
+        if (tx.numInputs()==0) return true;
+
 
         for (int index = 0; index < tx.numInputs(); index++) {
             Transaction.Input input = tx.getInput(index);
