@@ -62,6 +62,7 @@ public class TxHandlerOptimized {
 
     @Test
     public void isValidTxWithValidTx(){
+
         //here I am checking the validity of tx17
         UTXOPool utxoPoolAfterTx14 = new UTXOPool();
         utxoPoolAfterTx14.addUTXO(utxo14_0, tx14.getOutput(0));

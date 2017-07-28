@@ -5,6 +5,8 @@ import java.util.Set;
 
 public class TxHandler {
 
+    //todo: i am probably missing Transaction.removeInput(UTXO ux) somewhere!
+
     UTXOPool candidateUtxoPool;
 
     /**
