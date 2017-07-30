@@ -32,17 +32,13 @@ public class TxHandler {
      */
     public boolean isValidTx(Transaction tx) {
 
-
         double totalValueOfInputs = 0;
         double totalValueOfOutputs = 0;
         Set<UTXO> spentUTXO = new HashSet<>();
 
-
         /*
         * Conditions (1), (2), (3) and (5) don't apply to createCoins transactions (those which have no input)
         */
-
-
         if (tx.numInputs()==0) return hasNonNegativeOutputs(tx);
 
 
