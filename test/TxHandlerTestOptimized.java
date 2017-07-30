@@ -18,7 +18,7 @@ import static org.powermock.api.mockito.PowerMockito.when;
 public class TxHandlerTestOptimized {
 
     static PublicKey CataPk, FraPk;
-    static Transaction tx10, tx14, tx17, tx42, tx43;
+    static Transaction tx14, tx17, tx42, tx43, tx51;
     static UTXO utxo14_0, utxo17_0, utxo17_1;
 
     @BeforeClass
@@ -28,10 +28,10 @@ public class TxHandlerTestOptimized {
         FraPk = st.generatePublicKey();
 
         //this is a CreateCoins tx that is invalid as it has a negative input
-        tx10 = new Transaction();
-        tx10.addOutput(-1, CataPk);
+        tx51 = new Transaction();
+        tx51.addOutput(-1, CataPk);
         //BEWARE! must setHash()!
-        tx10.setHash(new byte[8]);
+        tx51.setHash(new byte[8]);
 
         //this is a CreateCoins tx that is valid
         tx14 = new Transaction();
@@ -63,10 +63,10 @@ public class TxHandlerTestOptimized {
 
     @Test
     public void isValidTxWithInvalidCreateCoinsTx(){
-        //here I am checking the validity of tx10
+        //here I am checking the validity of tx51
         UTXOPool genesisUTXOPool = new UTXOPool();
         TxHandler txHandler = new TxHandler(genesisUTXOPool);
-        Assert.assertFalse(txHandler.isValidTx(tx10));
+        Assert.assertFalse(txHandler.isValidTx(tx51));
     }
 
 
@@ -80,12 +80,10 @@ public class TxHandlerTestOptimized {
 
     @Test
     public void handleTxsWithSingleValidTransaction(){
-
-        //here I am checking the validity of tx17
+        //here I am evaluating whether tx17 gets handled correctly
         UTXOPool utxoPoolAfterTx14 = new UTXOPool();
         utxoPoolAfterTx14.addUTXO(utxo14_0, tx14.getOutput(0));
         TxHandler txHandler = new TxHandler(utxoPoolAfterTx14);
-        //so far this has no problems
 
         //Next line is deceitful!
         //System.out.println(utxoPoolAfterTx14.getAllUTXO());
@@ -101,18 +99,31 @@ public class TxHandlerTestOptimized {
         Transaction[] possibleTxs = new Transaction[1];
         possibleTxs[0] = tx17;
 
-        txHandler.handleTxs(possibleTxs);
+        Transaction[] validTransactions = txHandler.handleTxs(possibleTxs);
+        //our block had only one valid tx, namely tx17
+        Assert.assertEquals(validTransactions.length, 1);
 
+        //next is sanity check on utxoPool after handling txs
         Assert.assertTrue(txHandler.utxoPool.contains(utxo17_0));
         Assert.assertTrue(txHandler.utxoPool.contains(utxo17_1));
         Assert.assertFalse(utxo17_0.equals(utxo17_1));
-        System.out.println(txHandler.utxoPool.getAllUTXO());
 
     }
 
     @Test
-    public void handleTxsWithSingleInvalidTransaction(){
-        System.out.println("setup ok");
+    public void handleTxsWithSingleInvalidTransaction() {
+        //say that tx14 (valid) happened before tx51
+        UTXOPool utxoPoolAfterTx14 = new UTXOPool();
+        utxoPoolAfterTx14.addUTXO(utxo14_0, tx14.getOutput(0));
+        TxHandler txHandler = new TxHandler(utxoPoolAfterTx14);
+
+        Transaction[] possibleTxs = new Transaction[1];
+        possibleTxs[0] = tx51;
+
+        Transaction[] validTransactions = txHandler.handleTxs(possibleTxs);
+        //our block had only 0 valid tx, namely tx51
+        Assert.assertEquals(validTransactions.length, 0);
+        Assert.assertTrue(utxoPoolAfterTx14.contains(utxo14_0));
     }
 
 }

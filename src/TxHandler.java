@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -108,42 +109,15 @@ public class TxHandler {
         for (int i = 0; i < numberOfPossibleTransactions ; i++){
             Transaction tx = possibleTxs[i];
             if (isValidTx(tx)){
-                validTransactions[i] = tx;          //should I care if there are nulls in some spaces?
+                validTransactions[i] = tx; //this will put nulls in some places if there are invalid transactions!
                 updateCandidatePool(tx);
             }
         }
 
         utxoPool = candidateUtxoPool;
-        return validTransactions;
+        return nonNullValidTransactions(validTransactions);
 
     }
-
-/*    public Transaction[] handleTxs(Transaction[] possibleTxs) {
-        *//* LOGIC:
-        1. loop through all transactions and enlarge candidate pool
-        2. loop through all transactions again checking each for validity
-        if valid update candidate pool
-        *//*
-
-        Transaction[] validTransactions = new Transaction[1];
-
-
-
-        addAllUTXOtoCandidatePool(possibleTxs);
-
-        for (Transaction tx : possibleTxs){
-            if (isValidTx(tx)) {
-                validTransactions[0] = tx;
-                updateCandidatePool(tx);
-            }
-        }
-        return validTransactions;
-
-    }*/
-
-
-
-
 
 
     //this method adds ALL UTXOs consumed in possibleTxs to candidateUtxoPool, whether the tx is valid or not
@@ -175,5 +149,13 @@ public class TxHandler {
             UTXO createdUtxo = new UTXO(tx.getHash(), i);
             candidateUtxoPool.addUTXO(createdUtxo, tx.getOutput(i));
         }
+    }
+
+    public Transaction[] nonNullValidTransactions(Transaction[] validTransactionsArray){
+
+        Transaction[] nonNullValidTransactions
+                = Arrays.stream(validTransactionsArray).filter(s -> (s != null)).toArray(Transaction[]::new);
+
+        return nonNullValidTransactions;
     }
 }

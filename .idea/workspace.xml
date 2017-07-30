@@ -16,7 +16,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.43426532">
+    <splitter split-orientation="horizontal" split-proportion="0.38132066">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
           <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="false">
@@ -32,8 +32,8 @@
           <file leaf-file-name="TxHandler.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/TxHandler.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="332">
-                  <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+                <state relative-caret-position="200">
+                  <caret line="117" column="58" lean-forward="false" selection-start-line="117" selection-start-column="58" selection-end-line="117" selection-end-column="58" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -90,12 +90,10 @@
           <file leaf-file-name="TxHandlerTestOptimized.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/TxHandlerTestOptimized.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="269">
-                  <caret line="68" column="51" lean-forward="false" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
+                <state relative-caret-position="543">
+                  <caret line="125" column="8" lean-forward="true" selection-start-line="125" selection-start-column="8" selection-end-line="125" selection-end-column="8" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#3669#3670#0" expanded="true" />
-                    <element signature="e#3715#3716#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -279,7 +277,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TxHandlerTestOptimized.isValidTxWithInvalidCreateCoinsTx">
+  <component name="RunManager" selected="JUnit.TxHandlerTestOptimized.handleTxsWithSingleInvalidTransaction">
     <configuration default="false" name="TxHandlerTestOptimized.handleTxsWithSingleValidTransaction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="ScroogeCoin" />
@@ -781,10 +779,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.isValidTxWithInvalidCreateCoinsTx" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.isValidTxWithValidCreateCoinsTx" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.handleTxsWithSingleValidTransaction" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.handleTxsWithSingleInvalidTransaction" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.handleTxsWithSingleInvalidTransaction" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.handleTxsWithSingleValidTransaction" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.isValidTxWithInvalidCreateCoinsTx" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.isValidTxWithValidCreateCoinsTx" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.txHandlerTestWithSingleValidTx" />
       </list>
     </recent_temporary>
@@ -806,44 +804,44 @@
       <workItem from="1501056666139" duration="14605000" />
       <workItem from="1501142892411" duration="18572000" />
       <workItem from="1501250031779" duration="86000" />
-      <workItem from="1501428749075" duration="3639000" />
+      <workItem from="1501428749075" duration="5848000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TxHandlerTestOptimized_handleTxsWithSingleInvalidTransaction - 2017.07.30 at 18h 18m 52s.xml">
+    <history-entry file="TxHandlerTestOptimized_handleTxsWithSingleInvalidTransaction - 2017.07.30 at 18h 55m 24s.xml">
       <configuration name="TxHandlerTestOptimized.handleTxsWithSingleInvalidTransaction" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TxHandlerTestOptimized_handleTxsWithSingleValidTransaction - 2017.07.30 at 18h 24m 58s.xml">
+    <history-entry file="TxHandlerTestOptimized_handleTxsWithSingleInvalidTransaction - 2017.07.30 at 18h 56m 13s.xml">
+      <configuration name="TxHandlerTestOptimized.handleTxsWithSingleInvalidTransaction" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TxHandlerTestOptimized_handleTxsWithSingleInvalidTransaction - 2017.07.30 at 18h 56m 24s.xml">
+      <configuration name="TxHandlerTestOptimized.handleTxsWithSingleInvalidTransaction" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TxHandlerTestOptimized_handleTxsWithSingleInvalidTransaction - 2017.07.30 at 18h 59m 06s.xml">
+      <configuration name="TxHandlerTestOptimized.handleTxsWithSingleInvalidTransaction" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TxHandlerTestOptimized_handleTxsWithSingleInvalidTransaction - 2017.07.30 at 18h 59m 57s.xml">
+      <configuration name="TxHandlerTestOptimized.handleTxsWithSingleInvalidTransaction" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TxHandlerTestOptimized_handleTxsWithSingleInvalidTransaction - 2017.07.30 at 19h 08m 49s.xml">
+      <configuration name="TxHandlerTestOptimized.handleTxsWithSingleInvalidTransaction" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TxHandlerTestOptimized_handleTxsWithSingleValidTransaction - 2017.07.30 at 18h 51m 52s.xml">
       <configuration name="TxHandlerTestOptimized.handleTxsWithSingleValidTransaction" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TxHandlerTestOptimized_isValidTxWithNoInputs - 2017.07.30 at 18h 22m 44s.xml">
-      <configuration name="TxHandlerTestOptimized.isValidTxWithNoInputs" configurationId="JUnit" />
+    <history-entry file="TxHandlerTestOptimized_handleTxsWithSingleValidTransaction - 2017.07.30 at 18h 52m 26s.xml">
+      <configuration name="TxHandlerTestOptimized.handleTxsWithSingleValidTransaction" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TxHandlerTestOptimized_isValidTxWithNoInputs - 2017.07.30 at 18h 23m 55s.xml">
-      <configuration name="TxHandlerTestOptimized.isValidTxWithNoInputs" configurationId="JUnit" />
+    <history-entry file="TxHandlerTestOptimized_handleTxsWithSingleValidTransaction - 2017.07.30 at 18h 53m 53s.xml">
+      <configuration name="TxHandlerTestOptimized.handleTxsWithSingleValidTransaction" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TxHandlerTestOptimized_isValidTxWithNoInputs - 2017.07.30 at 18h 25m 08s.xml">
-      <configuration name="TxHandlerTestOptimized.isValidTxWithNoInputs" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TxHandlerTestOptimized_isValidTxWithNoInputs - 2017.07.30 at 18h 29m 47s.xml">
-      <configuration name="TxHandlerTestOptimized.isValidTxWithNoInputs" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TxHandlerTestOptimized_isValidTxWithValidCreateCoinsTx - 2017.07.30 at 18h 32m 16s.xml">
-      <configuration name="TxHandlerTestOptimized.isValidTxWithValidCreateCoinsTx" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TxHandlerTestOptimized_isValidTxWithValidTx - 2017.07.30 at 18h 15m 07s.xml">
-      <configuration name="TxHandlerTestOptimized.isValidTxWithValidTx" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TxHandlerTestOptimized_isValidTxWithValidTx - 2017.07.30 at 18h 15m 59s.xml">
-      <configuration name="TxHandlerTestOptimized.isValidTxWithValidTx" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TxHandlerTestOptimized_isValidTxWithValidTx - 2017.07.30 at 18h 16m 31s.xml">
-      <configuration name="TxHandlerTestOptimized.isValidTxWithValidTx" configurationId="JUnit" />
+    <history-entry file="TxHandlerTestOptimized_handleTxsWithSingleValidTransaction - 2017.07.30 at 19h 10m 03s.xml">
+      <configuration name="TxHandlerTestOptimized.handleTxsWithSingleValidTransaction" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44551000" />
+    <option name="totallyTimeSpent" value="46760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1850" height="1096" extended-state="6" />
@@ -859,13 +857,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.399361" sideWeight="0.50224215" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3312034" sideWeight="0.49775785" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33226836" sideWeight="0.49775785" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35250267" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.053490993" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -877,7 +876,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -991,8 +989,6 @@
           <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3669#3670#0" expanded="true" />
-            <element signature="e#3715#3716#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1055,8 +1051,6 @@
           <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3669#3670#0" expanded="true" />
-            <element signature="e#3715#3716#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1254,8 +1248,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TxHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="200">
+          <caret line="117" column="58" lean-forward="false" selection-start-line="117" selection-start-column="58" selection-end-line="117" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1264,12 +1258,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/TxHandlerTestOptimized.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="68" column="51" lean-forward="false" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
+        <state relative-caret-position="543">
+          <caret line="125" column="8" lean-forward="true" selection-start-line="125" selection-start-column="8" selection-end-line="125" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3669#3670#0" expanded="true" />
-            <element signature="e#3715#3716#0" expanded="true" />
           </folding>
         </state>
       </provider>
