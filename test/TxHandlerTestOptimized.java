@@ -19,7 +19,7 @@ public class TxHandlerTestOptimized {
 
     static PublicKey CataPk, FraPk;
     static Transaction tx14, tx17, tx42, tx43;
-    static UTXO utxo14_0;
+    static UTXO utxo14_0, utxo17_0, utxo17_1;
 
     @BeforeClass
     public static void setup() throws NoSuchProviderException, NoSuchAlgorithmException {
@@ -43,6 +43,9 @@ public class TxHandlerTestOptimized {
         tx17.setHash(new byte[8]);
 
         utxo14_0 = new UTXO(tx14.getHash(), 0);
+
+        utxo17_0 = new UTXO(tx17.getHash(), 0);
+        utxo17_1 = new UTXO(tx17.getHash(), 1);
 
     }
 
@@ -68,25 +71,31 @@ public class TxHandlerTestOptimized {
         TxHandler txHandler = new TxHandler(utxoPoolAfterTx14);
         //so far this has no problems
 
-        System.out.println(utxoPoolAfterTx14.getAllUTXO());
+        //Next line is deceitful!
+        //System.out.println(utxoPoolAfterTx14.getAllUTXO());
+
+        Assert.assertTrue(utxoPoolAfterTx14.contains(utxo14_0));
         byte[] message = tx17.getRawDataToSign(0);
 
         PowerMockito.mockStatic(Crypto.class);
         when(Crypto.verifySignature(CataPk, message, tx17.getInput(0).signature )).thenReturn(true);
 
-        System.out.println(txHandler.isValidTx(tx17));
-
-
-
-        //System.out.println(utxoPoolAfterTx14.getAllUTXO());
+        System.out.println("tx 17 is valid:" + txHandler.isValidTx(tx17));
 
         Transaction[] possibleTxs = new Transaction[1];
         possibleTxs[0] = tx17;
+
         txHandler.handleTxs(possibleTxs);
 
+        Assert.assertTrue(txHandler.utxoPool.contains(utxo17_0));
+        Assert.assertTrue(txHandler.utxoPool.contains(utxo17_1));
+        Assert.assertFalse(utxo17_0.equals(utxo17_1));
         System.out.println(txHandler.utxoPool.getAllUTXO());
 
-    }
+        //Assert.assertFalse(txHandler.utxoPool.contains(utxo14_0));
 
+
+
+    }
 
 }

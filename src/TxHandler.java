@@ -136,6 +136,8 @@ public class TxHandler {
 
     //this method adds ALL UTXOs consumed in possibleTxs to candidateUtxoPool, whether the tx is valid or not
     public void addAllUTXOtoCandidatePool(Transaction[] possibleTxs) {
+
+
         for (Transaction tx : possibleTxs) {
             int numberOfOutputs = tx.numOutputs();
             for (int i = 0; i < numberOfOutputs; i++) {
@@ -148,9 +150,18 @@ public class TxHandler {
 
 
     public void updateCandidatePool(Transaction tx){
-        //since tx is valid, as you find an utxo you can go ahead and remove it from the candidatePool
-        tx.getInputs().forEach(input -> {UTXO utxo = new UTXO(input.prevTxHash, input.outputIndex);
-            candidateUtxoPool.removeUTXO(utxo);
+
+        //since tx is valid, as you find an unspent utxo you can go ahead and remove it from the candidatePool
+        tx.getInputs().forEach(input -> {UTXO spentUtxo = new UTXO(input.prevTxHash, input.outputIndex);
+            candidateUtxoPool.removeUTXO(spentUtxo);
         });
+
+        //since tx is valid, all its outputs must be added to candidatePool
+        //can't be done with lambda as we need indices
+        List<Transaction.Output> outputs = tx.getOutputs();
+        for (int i = 0; i < outputs.size(); i++){
+            UTXO createdUtxo = new UTXO(tx.getHash(), i);
+            candidateUtxoPool.addUTXO(createdUtxo, tx.getOutput(i));
+        }
     }
 }
