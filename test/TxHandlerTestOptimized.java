@@ -2,7 +2,6 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.api.mockito.PowerMockito;
 import org.powermock.modules.junit4.PowerMockRunner;
@@ -16,7 +15,7 @@ import static org.powermock.api.mockito.PowerMockito.when;
 @RunWith(PowerMockRunner.class)
 @PrepareForTest({Crypto.class})
 
-public class TxHandlerOptimized {
+public class TxHandlerTestOptimized {
 
     static PublicKey CataPk, FraPk;
     static Transaction tx14, tx17, tx42, tx43;
@@ -69,12 +68,24 @@ public class TxHandlerOptimized {
         TxHandler txHandler = new TxHandler(utxoPoolAfterTx14);
         //so far this has no problems
 
+        System.out.println(utxoPoolAfterTx14.getAllUTXO());
         byte[] message = tx17.getRawDataToSign(0);
 
         PowerMockito.mockStatic(Crypto.class);
         when(Crypto.verifySignature(CataPk, message, tx17.getInput(0).signature )).thenReturn(true);
 
-        txHandler.isValidTx(tx17);
+        System.out.println(txHandler.isValidTx(tx17));
+
+
+
+        //System.out.println(utxoPoolAfterTx14.getAllUTXO());
+
+        Transaction[] possibleTxs = new Transaction[1];
+        possibleTxs[0] = tx17;
+        txHandler.handleTxs(possibleTxs);
+
+        System.out.println(txHandler.utxoPool.getAllUTXO());
+
     }
 
 

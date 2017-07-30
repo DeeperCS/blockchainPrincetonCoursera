@@ -88,4 +88,10 @@ public class UTXO implements Comparable<UTXO> {
             }
         }
     }
+
+    @Override
+    public String toString(){
+        String result = this.txHash + ", " + this.index;
+        return result;
+    }
 }

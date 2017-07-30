@@ -7,6 +7,7 @@ public class TxHandler {
 
     //todo: i am probably missing Transaction.removeInput(UTXO ux) somewhere!
 
+    UTXOPool utxoPool;
     UTXOPool candidateUtxoPool;
 
     /**
@@ -16,6 +17,7 @@ public class TxHandler {
      */
     public TxHandler(UTXOPool utxoPool) {
         //first step is to make a "defensive" copy of utxoPool:
+        utxoPool = new UTXOPool(utxoPool);
         candidateUtxoPool = new UTXOPool(utxoPool);
     }
 
@@ -99,6 +101,7 @@ public class TxHandler {
             }
         }
 
+        utxoPool = candidateUtxoPool;
         return validTransactions;
 
     }
@@ -147,6 +150,7 @@ public class TxHandler {
     public void updateCandidatePool(Transaction tx){
         //since tx is valid, as you find an utxo you can go ahead and remove it from the candidatePool
         tx.getInputs().forEach(input -> {UTXO utxo = new UTXO(input.prevTxHash, input.outputIndex);
-            candidateUtxoPool.removeUTXO(utxo);});
+            candidateUtxoPool.removeUTXO(utxo);
+        });
     }
 }
