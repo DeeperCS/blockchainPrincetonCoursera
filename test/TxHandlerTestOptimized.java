@@ -18,7 +18,7 @@ import static org.powermock.api.mockito.PowerMockito.when;
 public class TxHandlerTestOptimized {
 
     static PublicKey CataPk, FraPk;
-    static Transaction tx14, tx17, tx42, tx43;
+    static Transaction tx10, tx14, tx17, tx42, tx43;
     static UTXO utxo14_0, utxo17_0, utxo17_1;
 
     @BeforeClass
@@ -27,9 +27,15 @@ public class TxHandlerTestOptimized {
         CataPk = st.generatePublicKey();
         FraPk = st.generatePublicKey();
 
+        //this is a CreateCoins tx that is invalid as it has a negative input
+        tx10 = new Transaction();
+        tx10.addOutput(-1, CataPk);
+        //BEWARE! must setHash()!
+        tx10.setHash(new byte[8]);
+
+        //this is a CreateCoins tx that is valid
         tx14 = new Transaction();
         tx14.addOutput(2, CataPk);
-        //BEWARE! must setHash()!
         tx14.setHash(new byte[8]);
 
         tx17 = new Transaction();
@@ -54,8 +60,18 @@ public class TxHandlerTestOptimized {
         System.out.println("all good");
     }
 
+
     @Test
-    public void isValidTxWithNoInputs(){
+    public void isValidTxWithInvalidCreateCoinsTx(){
+        //here I am checking the validity of tx10
+        UTXOPool genesisUTXOPool = new UTXOPool();
+        TxHandler txHandler = new TxHandler(genesisUTXOPool);
+        Assert.assertFalse(txHandler.isValidTx(tx10));
+    }
+
+
+    @Test
+    public void isValidTxWithValidCreateCoinsTx(){
         //here I am checking the validity of tx14
         UTXOPool genesisUTXOPool = new UTXOPool();
         TxHandler txHandler = new TxHandler(genesisUTXOPool);
@@ -63,7 +79,7 @@ public class TxHandlerTestOptimized {
     }
 
     @Test
-    public void isValidTxWithValidTx(){
+    public void handleTxsWithSingleValidTransaction(){
 
         //here I am checking the validity of tx17
         UTXOPool utxoPoolAfterTx14 = new UTXOPool();
@@ -92,10 +108,11 @@ public class TxHandlerTestOptimized {
         Assert.assertFalse(utxo17_0.equals(utxo17_1));
         System.out.println(txHandler.utxoPool.getAllUTXO());
 
-        //Assert.assertFalse(txHandler.utxoPool.contains(utxo14_0));
+    }
 
-
-
+    @Test
+    public void handleTxsWithSingleInvalidTransaction(){
+        System.out.println("setup ok");
     }
 
 }

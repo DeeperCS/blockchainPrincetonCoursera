@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -37,11 +36,13 @@ public class TxHandler {
         double totalValueOfOutputs = 0;
         Set<UTXO> spentUTXO = new HashSet<>();
 
-        //todo: first figure out what to do with createCoin transactions (have no input)
+
         /*
-        * Conditions (1), (2), (3) and (5) don't apply
+        * Conditions (1), (2), (3) and (5) don't apply to createCoins transactions (those which have no input)
         */
-        if (tx.numInputs()==0) return true;
+
+
+        if (tx.numInputs()==0) return hasNonNegativeOutputs(tx);
 
 
         for (int index = 0; index < tx.numInputs(); index++) {
@@ -71,6 +72,17 @@ public class TxHandler {
 
         //condition (5)
         return (totalValueOfInputs >= totalValueOfOutputs);
+    }
+
+
+    public boolean hasNonNegativeOutputs(Transaction tx){
+        for (int index = 0; index < tx.numOutputs(); index++) {
+            Transaction.Output output = tx.getOutput(index);
+            //condition (4)
+            if (output.value < 0) return false;
+            //totalValueOfOutputs = +output.value;
+        }
+        return true;
     }
 
 

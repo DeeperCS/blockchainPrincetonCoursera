@@ -16,7 +16,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45211184">
+    <splitter split-orientation="horizontal" split-proportion="0.43426532">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
           <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="false">
@@ -32,8 +32,8 @@
           <file leaf-file-name="TxHandler.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/TxHandler.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-74">
-                  <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+                <state relative-caret-position="332">
+                  <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -90,10 +90,12 @@
           <file leaf-file-name="TxHandlerTestOptimized.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/TxHandlerTestOptimized.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="609">
-                  <caret line="91" column="51" lean-forward="false" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
+                <state relative-caret-position="269">
+                  <caret line="68" column="51" lean-forward="false" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#3669#3670#0" expanded="true" />
+                    <element signature="e#3715#3716#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -277,79 +279,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration default="false" name="TxHandlerTestOptimized.testSetup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TxHandlerTestOptimized.isValidTxWithInvalidCreateCoinsTx">
+    <configuration default="false" name="TxHandlerTestOptimized.handleTxsWithSingleValidTransaction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="ScroogeCoin" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TxHandlerTestOptimized" />
-      <option name="METHOD_NAME" value="testSetup" />
+      <option name="METHOD_NAME" value="handleTxsWithSingleValidTransaction" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TxHandlerTestOptimized.isValidTxWithNoInputs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="ScroogeCoin" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TxHandlerTestOptimized" />
-      <option name="METHOD_NAME" value="isValidTxWithNoInputs" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TxHandlerTestOptimized.isValidTxWithValidTx" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="ScroogeCoin" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TxHandlerTestOptimized" />
-      <option name="METHOD_NAME" value="isValidTxWithValidTx" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TxHandlerTestOptimized" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="ScroogeCoin" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TxHandlerTestOptimized" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -370,6 +309,69 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TxHandlerTestOptimized" />
       <option name="METHOD_NAME" value="txHandlerTestWithSingleValidTx" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TxHandlerTestOptimized.handleTxsWithSingleInvalidTransaction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="ScroogeCoin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TxHandlerTestOptimized" />
+      <option name="METHOD_NAME" value="handleTxsWithSingleInvalidTransaction" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TxHandlerTestOptimized.isValidTxWithValidCreateCoinsTx" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="ScroogeCoin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TxHandlerTestOptimized" />
+      <option name="METHOD_NAME" value="isValidTxWithValidCreateCoinsTx" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TxHandlerTestOptimized.isValidTxWithInvalidCreateCoinsTx" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="ScroogeCoin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TxHandlerTestOptimized" />
+      <option name="METHOD_NAME" value="isValidTxWithInvalidCreateCoinsTx" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -771,19 +773,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.testSetup" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.isValidTxWithNoInputs" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.isValidTxWithValidTx" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.txHandlerTestWithSingleValidTx" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.handleTxsWithSingleValidTransaction" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.txHandlerTestWithSingleValidTx" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.handleTxsWithSingleInvalidTransaction" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.isValidTxWithValidCreateCoinsTx" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.isValidTxWithInvalidCreateCoinsTx" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.isValidTxWithValidTx" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.txHandlerTestWithSingleValidTx" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.testSetup" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.isValidTxWithNoInputs" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.isValidTxWithInvalidCreateCoinsTx" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.isValidTxWithValidCreateCoinsTx" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.handleTxsWithSingleValidTransaction" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.handleTxsWithSingleInvalidTransaction" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TxHandlerTestOptimized.txHandlerTestWithSingleValidTx" />
       </list>
     </recent_temporary>
   </component>
@@ -804,34 +806,31 @@
       <workItem from="1501056666139" duration="14605000" />
       <workItem from="1501142892411" duration="18572000" />
       <workItem from="1501250031779" duration="86000" />
-      <workItem from="1501428749075" duration="2600000" />
+      <workItem from="1501428749075" duration="3639000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TxHandlerTestOptimized_isValidTxWithValidTx - 2017.07.30 at 18h 03m 14s.xml">
-      <configuration name="TxHandlerTestOptimized.isValidTxWithValidTx" configurationId="JUnit" />
+    <history-entry file="TxHandlerTestOptimized_handleTxsWithSingleInvalidTransaction - 2017.07.30 at 18h 18m 52s.xml">
+      <configuration name="TxHandlerTestOptimized.handleTxsWithSingleInvalidTransaction" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TxHandlerTestOptimized_isValidTxWithValidTx - 2017.07.30 at 18h 04m 51s.xml">
-      <configuration name="TxHandlerTestOptimized.isValidTxWithValidTx" configurationId="JUnit" />
+    <history-entry file="TxHandlerTestOptimized_handleTxsWithSingleValidTransaction - 2017.07.30 at 18h 24m 58s.xml">
+      <configuration name="TxHandlerTestOptimized.handleTxsWithSingleValidTransaction" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TxHandlerTestOptimized_isValidTxWithValidTx - 2017.07.30 at 18h 05m 50s.xml">
-      <configuration name="TxHandlerTestOptimized.isValidTxWithValidTx" configurationId="JUnit" />
+    <history-entry file="TxHandlerTestOptimized_isValidTxWithNoInputs - 2017.07.30 at 18h 22m 44s.xml">
+      <configuration name="TxHandlerTestOptimized.isValidTxWithNoInputs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TxHandlerTestOptimized_isValidTxWithValidTx - 2017.07.30 at 18h 08m 59s.xml">
-      <configuration name="TxHandlerTestOptimized.isValidTxWithValidTx" configurationId="JUnit" />
+    <history-entry file="TxHandlerTestOptimized_isValidTxWithNoInputs - 2017.07.30 at 18h 23m 55s.xml">
+      <configuration name="TxHandlerTestOptimized.isValidTxWithNoInputs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TxHandlerTestOptimized_isValidTxWithValidTx - 2017.07.30 at 18h 10m 53s.xml">
-      <configuration name="TxHandlerTestOptimized.isValidTxWithValidTx" configurationId="JUnit" />
+    <history-entry file="TxHandlerTestOptimized_isValidTxWithNoInputs - 2017.07.30 at 18h 25m 08s.xml">
+      <configuration name="TxHandlerTestOptimized.isValidTxWithNoInputs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TxHandlerTestOptimized_isValidTxWithValidTx - 2017.07.30 at 18h 11m 19s.xml">
-      <configuration name="TxHandlerTestOptimized.isValidTxWithValidTx" configurationId="JUnit" />
+    <history-entry file="TxHandlerTestOptimized_isValidTxWithNoInputs - 2017.07.30 at 18h 29m 47s.xml">
+      <configuration name="TxHandlerTestOptimized.isValidTxWithNoInputs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TxHandlerTestOptimized_isValidTxWithValidTx - 2017.07.30 at 18h 14m 15s.xml">
-      <configuration name="TxHandlerTestOptimized.isValidTxWithValidTx" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TxHandlerTestOptimized_isValidTxWithValidTx - 2017.07.30 at 18h 14m 42s.xml">
-      <configuration name="TxHandlerTestOptimized.isValidTxWithValidTx" configurationId="JUnit" />
+    <history-entry file="TxHandlerTestOptimized_isValidTxWithValidCreateCoinsTx - 2017.07.30 at 18h 32m 16s.xml">
+      <configuration name="TxHandlerTestOptimized.isValidTxWithValidCreateCoinsTx" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TxHandlerTestOptimized_isValidTxWithValidTx - 2017.07.30 at 18h 15m 07s.xml">
       <configuration name="TxHandlerTestOptimized.isValidTxWithValidTx" configurationId="JUnit" />
@@ -839,9 +838,12 @@
     <history-entry file="TxHandlerTestOptimized_isValidTxWithValidTx - 2017.07.30 at 18h 15m 59s.xml">
       <configuration name="TxHandlerTestOptimized.isValidTxWithValidTx" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TxHandlerTestOptimized_isValidTxWithValidTx - 2017.07.30 at 18h 16m 31s.xml">
+      <configuration name="TxHandlerTestOptimized.isValidTxWithValidTx" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43512000" />
+    <option name="totallyTimeSpent" value="44551000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1850" height="1096" extended-state="6" />
@@ -989,6 +991,8 @@
           <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3669#3670#0" expanded="true" />
+            <element signature="e#3715#3716#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1051,6 +1055,8 @@
           <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3669#3670#0" expanded="true" />
+            <element signature="e#3715#3716#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1248,8 +1254,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TxHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+        <state relative-caret-position="332">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1258,10 +1264,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/TxHandlerTestOptimized.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="91" column="51" lean-forward="false" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
+        <state relative-caret-position="269">
+          <caret line="68" column="51" lean-forward="false" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3669#3670#0" expanded="true" />
+            <element signature="e#3715#3716#0" expanded="true" />
           </folding>
         </state>
       </provider>
